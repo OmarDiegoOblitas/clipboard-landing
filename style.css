@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2? family = Bai + Jamjuree: wght @ 400; 600 & family = Open + Sans: wght @ 400; 600; 700 & display = swap");
+
+/*Weights: 400, 600*/
+/*Mobile: 375px  Desktop: 1440px*/
+
+:root {
+  /*Primary*/
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Bai Jamjuree";
+}
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+.intro {
+  width: 100%;
+  background-image: url(./images/bg-header-mobile.png);
+}
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inicio {
+  width: 30%;
+  display: flex;
+  padding-top: 6rem;
+}
+.title {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  font-size: 35px;
+}
+.intro > p {
+  color: var(--Grayish-Blue);
+  display: flex;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.botones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  gap: 1rem;
+}
+.botones > input {
+  color: white;
+  cursor: pointer;
+  border-radius: 2rem;
+  height: 3rem;
+  border: none;
+  font-size: 16px;
+}
+.botones > input:first-child {
+  background-color: var(--Strong-Cyan);
+}
+.botones > input:last-child {
+  background-color: var(--Light-Blue);
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.details > h1 {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  font-size: 35px;
+}
+.details > p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  text-align: center;
+}
+.details > img {
+  padding: 2rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section > span {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--Dark-Grayish-Blue);
+}
+.section > p {
+  text-align: center;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+}
+.info {
+  margin-top: 8rem;
+}
+.info > h1 {
+  display: flex;
+  text-align: center;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+.clicks {
+  text-align: center;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+.device {
+  width: 100%;
+  padding: 4rem 1rem 5rem 1rem;
+}
+.title2 {
+  text-align: center;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 29px;
+}
+.descrip {
+  text-align: center;
+  padding: 0 4rem 2rem 4rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+}
+.ruta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.ruta > img {
+  width: 10%;
+  padding: 2rem 0 1.5rem 0;
+}
+.ruta > span {
+  display: flex;
+  text-align: center;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 22px;
+}
+.ruta > p {
+  text-align: center;
+  font-weight: 400;
+  color: lightgray;
+  font-size: 20px;
+}
+.logo {
+  padding: 8rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.logo > img {
+  margin: 3rem 6rem 3rem 6rem;
+  width: auto;
+}
+.download > h2 {
+  text-align: center;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 30px;
+}
+.download > p {
+  text-align: center;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  font-size: 21px;
+  margin-bottom: 2rem;
+}
+footer {
+  background-color: #f2f3f4 !important;
+  margin-top: 4rem;
+}
+.logof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.logof > img {
+  width: 60px;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+  color: var(--Grayish-Blue);
+  font-size: 20px;
+}
+.links {
+  padding: 4rem 0 4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+  .intro {
+    padding: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .logout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio {
+    width: 15%;
+  }
+  .title {
+    font-size: 52px;
+  }
+  .intro > p {
+    padding: 0 10rem 0 10rem;
+    font-size: 24px;
+  }
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  .botones > input {
+    font-weight: 600;
+    font-size: 22px;
+    width: 350px;
+    height: 100px;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .details h1,
+  .details p {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    max-width: 50rem;
+  }
+  .details h1 {
+    padding: 0 8rem;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .details > img {
+    padding: 0;
+    margin: 0;
+    margin-left: -4rem;
+    max-width: fit-content;
+  }
+
+  .section {
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  .section > p {
+    padding: 0;
+  }
+  .info > h1 {
+    justify-content: center;
+  }
+  .clicks {
+    padding: 0 28rem;
+  }
+  .device {
+    padding: 6rem 18rem;
+  }
+  .ruta {
+    flex-direction: row;
+  }
+  .ruta > span {
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+
+    color: var(--Dark-Grayish-Blue);
+    font-size: 22px;
+    margin: 1rem 0 1rem 0;
+  }
+  .ruta > p {
+    text-align: center;
+    font-weight: 400;
+    color: lightgray;
+    font-size: 20px;
+  }
+  .logo {
+    flex-direction: row;
+    padding: 8rem 4rem;
+    justify-content: space-evenly;
+  }
+  .logo > img {
+    margin: 0;
+    padding: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  .logof {
+    padding: 0;
+  }
+  .faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid: 2rem;
+    padding: 0;
+  }
+  .links {
+    display: flex;
+    gap: 3rem;
+    padding-left: 4rem;
+  }
+  .links > img {
+    height: 30px;
+    width: 30px;
+  }
+}
